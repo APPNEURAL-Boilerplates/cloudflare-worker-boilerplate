@@ -7,16 +7,27 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "preview": "wrangler dev --remote",
     "types": "wrangler types",
     "typecheck": "wrangler types && tsc --noEmit",
     "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "clean": "rm -rf .wrangler dist coverage",
+    "tail": "wrangler tail",
+    "smoke": "node scripts/smoke-test.mjs",
     "check": "npm run typecheck && npm test"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.5.0",
+    "@cloudflare/vitest-pool-workers": "^0.16.5",
     "@cloudflare/workers-types": "^4.20260514.1",
-    "typescript": "^5.5.0",
-    "vitest": "2.1.9",
-    "wrangler": "^3.78.0"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "prettier": "^3.8.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.59.3",
+    "vitest": "^4.1.6",
+    "wrangler": "^4.91.0"
   }
 }

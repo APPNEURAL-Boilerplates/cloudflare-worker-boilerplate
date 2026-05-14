@@ -1,0 +1,1 @@
+-- Add D1 schema migrations here when this Worker needs a SQL database.
