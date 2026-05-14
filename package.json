@@ -18,7 +18,8 @@
     "clean": "rm -rf .wrangler dist coverage",
     "tail": "wrangler tail",
     "smoke": "node scripts/smoke-test.mjs",
-    "check": "npm run typecheck && npm test"
+    "check": "npm run typecheck && npm test",
+    "ci": "npm run lint && npm run check"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.16.5",

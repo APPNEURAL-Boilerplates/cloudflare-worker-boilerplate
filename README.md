@@ -107,6 +107,7 @@ Copy `.dev.vars.example` to `.dev.vars` for local secrets and overrides. Do not 
 | `npm run lint` | Run ESLint. |
 | `npm run format` | Format files with Prettier. |
 | `npm run check` | Run typecheck and tests. |
+| `npm run ci` | Run lint, typecheck, and tests. |
 | `npm run tail` | Tail deployed Worker logs. |
 | `npm run smoke` | Check `/health` and `/version` against a running Worker. |
 

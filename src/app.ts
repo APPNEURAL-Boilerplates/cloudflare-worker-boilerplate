@@ -13,7 +13,10 @@ import type { AppContext, AppHandler, AppRuntime } from "./types/app";
 
 const coreHandler: AppHandler = async (request, env, ctx, context) => {
   const preflight = handleCorsPreflight(request, env);
-  if (preflight) return preflight;
+  if (preflight) {
+    addSecurityHeaders(preflight.headers);
+    return preflight;
+  }
 
   const response = await route(request, env, ctx, context);
   addSecurityHeaders(response.headers);

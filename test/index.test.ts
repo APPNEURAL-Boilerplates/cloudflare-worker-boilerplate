@@ -116,5 +116,6 @@ describe("Cloudflare Worker boilerplate", () => {
     });
     expect(res.status).toBe(204);
     expect(res.headers.get("access-control-allow-origin")).toBe("*");
+    expect(res.headers.get("x-content-type-options")).toBe("nosniff");
   });
 });
