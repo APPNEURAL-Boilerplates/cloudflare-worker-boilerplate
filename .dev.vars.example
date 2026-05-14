@@ -1,0 +1,11 @@
+# Example local dev environment variables for `wrangler dev`.
+# Copy this file to `.dev.vars` (which is gitignored) and fill in real values.
+# Do NOT commit `.dev.vars` or any real secrets.
+#
+# For production, use:
+#   wrangler secret put MY_SECRET
+#
+# Variables defined here are exposed to the Worker as `env.<NAME>` at runtime.
+
+# EXAMPLE_API_KEY="replace-me"
+# LOG_LEVEL="debug"
