@@ -1,7 +1,7 @@
 import { cleanupJob } from "./cleanup";
 
 export async function runScheduledJob(
-  event: ScheduledEvent,
+  event: ScheduledController,
   env: Env,
   ctx: ExecutionContext,
 ): Promise<void> {

@@ -21,7 +21,11 @@ export type RouteHandler = (
   params: Record<string, string | undefined>,
 ) => Promise<Response> | Response;
 
-export type AppRuntime = Pick<ExportedHandler<Env>, "fetch" | "scheduled" | "queue">;
+export type AppRuntime = {
+  fetch: NonNullable<ExportedHandler<Env>["fetch"]>;
+  scheduled: NonNullable<ExportedHandler<Env>["scheduled"]>;
+  queue: NonNullable<ExportedHandler<Env>["queue"]>;
+};
 
 export type JsonSuccess<T> = {
   ok: true;
