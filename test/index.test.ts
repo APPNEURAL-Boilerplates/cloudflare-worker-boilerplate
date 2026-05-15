@@ -13,7 +13,7 @@ describe("Cloudflare Worker boilerplate", () => {
       data: { name: string; routes: string[] };
     };
     expect(body.ok).toBe(true);
-    expect(body.data.name).toBe("cloudflare-workers-typescript-microservice");
+    expect(body.data.name).toBe("cloudflare-workers-typescript-microservice-boilerplate");
     expect(body.data.routes).toContain("GET /health");
   });
 
@@ -37,7 +37,7 @@ describe("Cloudflare Worker boilerplate", () => {
       ok: true;
       data: { name: string; version: string; env: string };
     };
-    expect(body.data.name).toBe("cloudflare-workers-typescript-microservice");
+    expect(body.data.name).toBe("cloudflare-workers-typescript-microservice-boilerplate");
     expect(body.data.version).toBe("1.0.0");
     expect(body.data.env).toBe("development");
   });

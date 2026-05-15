@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "cloudflare-workers-typescript-microservice",
+  "name": "cloudflare-workers-typescript-microservice-boilerplate",
   "main": "src/index.ts",
   "compatibility_date": "2026-05-14",
   "observability": {
@@ -8,7 +8,7 @@
   },
   "vars": {
     "APP_ENV": "development",
-    "APP_NAME": "cloudflare-workers-typescript-microservice",
+    "APP_NAME": "cloudflare-workers-typescript-microservice-boilerplate",
     "APP_VERSION": "1.0.0",
     "LOG_LEVEL": "info",
     "ALLOWED_ORIGINS": "*"
