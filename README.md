@@ -1,4 +1,4 @@
-# Cloudflare Worker Boilerplate
+# Cloudflare Workers TypeScript Microservice
 
 Production-ready TypeScript starter for Cloudflare Workers. It includes routing, config loading, safe JSON responses, structured errors, middleware, Workers-runtime tests, Wrangler config, CI examples, and optional folders for storage, queues, cron, D1, and external API clients.
 
@@ -87,7 +87,7 @@ Copy `.dev.vars.example` to `.dev.vars` for local secrets and overrides. Do not 
 | Name | Required | Default | Notes |
 | --- | --- | --- | --- |
 | `APP_ENV` | No | `development` | `development`, `staging`, `production`, or `test`. |
-| `APP_NAME` | No | `cloudflare-worker-boilerplate` | Returned by `/version`. |
+| `APP_NAME` | No | `cloudflare-workers-typescript-microservice` | Returned by `/version`. |
 | `APP_VERSION` | No | `1.0.0` | Returned by `/version`. |
 | `LOG_LEVEL` | No | `info` | `debug`, `info`, `warn`, or `error`. |
 | `ALLOWED_ORIGINS` | No | `*` | Comma-separated CORS origins. |

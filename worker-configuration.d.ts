@@ -7,7 +7,7 @@ declare namespace Cloudflare {
 	}
 	interface Env {
 		APP_ENV: "development";
-		APP_NAME: "cloudflare-worker-boilerplate";
+		APP_NAME: "cloudflare-workers-typescript-microservice";
 		APP_VERSION: "1.0.0";
 		LOG_LEVEL: "info";
 		ALLOWED_ORIGINS: "*";

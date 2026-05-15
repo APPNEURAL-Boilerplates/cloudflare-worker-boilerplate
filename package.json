@@ -1,9 +1,9 @@
 {
-  "name": "cloudflare-worker-boilerplate",
+  "name": "cloudflare-workers-typescript-microservice",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Production-ready Cloudflare Worker TypeScript boilerplate.",
+  "description": "Production-ready Cloudflare Workers TypeScript microservice boilerplate.",
   "main": "src/index.ts",
   "scripts": {
     "dev": "wrangler dev",

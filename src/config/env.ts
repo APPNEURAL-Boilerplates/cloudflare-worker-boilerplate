@@ -20,7 +20,7 @@ export function loadConfig(env: Env): AppConfig {
   const raw = env as RawEnv;
   return {
     appEnv: parseAppEnv(raw.APP_ENV),
-    appName: raw.APP_NAME ?? "cloudflare-worker-boilerplate",
+    appName: raw.APP_NAME ?? "cloudflare-workers-typescript-microservice",
     version: raw.APP_VERSION ?? "1.0.0",
     logLevel: parseLogLevel(raw.LOG_LEVEL),
     allowedOrigins: parseCsv(raw.ALLOWED_ORIGINS ?? "*"),
